@@ -47,7 +47,7 @@ header h2{
 }
 input{
     background-color: rgb(230, 230, 230);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding: 5px;
     border: none;
     -webkit-appearance: none;
@@ -65,7 +65,7 @@ input[type="text"],input[type="password"]{
     display: block;
     text-decoration: none;
     color: rgb(26, 26, 26);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 #info a:hover{
     text-decoration: underline;
@@ -80,6 +80,8 @@ input[type="submit"]{
     color: whitesmoke;
     border: 2px solid rgb(77, 65, 150);
     transition: all .5s;
+    -webkit-appearance: none;
+    -webkit-border-image: none;
 }
 input[type="submit"]:hover{
     background-color: whitesmoke;
