@@ -10,26 +10,37 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
     <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
 <body>
-    <main>
-        <div id="login">
-            <header>
-                <img src="images/user.png.png" alt="#">
-                <h2>Conecte-se</h2>
-            </header>
-            <input type="text" name="name" id="name" placeholder="Nome">
-            <input type="password" name="pass" id="pass" placeholder="Senha">
-            <div id="info">
-                <a href="#">Esqueceu a senha?</a>
-                <a href="#">Crie uma conta</a>
+    <div id="bg">
+        <main>
+            <div id="login">
+                <header>
+                    <img src="images/user.png.png" alt="#">
+                    <h2>Conecte-se</h2>
+                </header>
+                <form action="#">
+                    <div class="input">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="user" id="user" placeholder="Usuário" required>
+                    </div>
+                    <div class="input">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="user" id="user" placeholder="Senha" required>
+                    </div>
+                    <div id="info">
+                        <a href="#">Esqueceu a senha?</a>
+                        <a href="#">Crie uma conta</a>
+                    </div>
+                    <input type="submit" value="Entrar">
+                </form>
             </div>
-            <input type="submit" value="Entrar">
-        </div>
-        <div id="login_2">
-            <h1>Seja bem-vindo</h1>
-            <img src="images/—Pngtree—a man at work_4463549.png" alt="#">
-        </div>
-    </main>
+            <div id="login_2">
+                <h1>Seja bem-vindo</h1>
+                <img src="images/—Pngtree—a man at work_4463549.png" alt="#">
+            </div>
+        </main>
+    </div>
 </body>
 </html>
