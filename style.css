@@ -1,5 +1,7 @@
 /* Geral */
-
+:root{
+    --color: rgb(77, 65, 150);
+}
 *{
     padding: 0%;
     margin: 0%;
@@ -35,13 +37,8 @@ main{
     box-shadow: 3px 3px 3px 6px rgba(0, 0, 0, .5);
     border-radius: 20px;
 }
-header{
-    text-align: center;
-    margin-bottom: 30px;
-}
-header h2{
-   font-size: 2.4rem;
-}
+/* Login (formulário) */
+
 #login{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -53,23 +50,34 @@ header h2{
     background-color: whitesmoke;
     animation: work 1.5s ease    forwards;
 }
-form{
-    text-align: center;
-}
 #login img{
     width: 150px;
 }
+form{
+    text-align: center;
+}
+/* Imagem e titulo */
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+header h2{
+    font-size: 2.4rem;
+    color: rgb(26, 26, 26);
+}
+/* Inputs e links */
+
 .input{
     width: 50%;
     margin-top: 10px;
     border-radius: 3px;
-    border-bottom: 3px solid slateblue;
+    border-bottom: 3px solid var(--color);
     position: relative;
     display: inline-block;
     background-color: whitesmoke;
     padding: 5px;
 }
-
 .input input{
     width: 90%;
     background-color: whitesmoke;
@@ -84,7 +92,7 @@ form{
     -webkit-border-image: none;
 }
 .input i{
-    color: slateblue;
+    color: var(--color);
     position: absolute;
     left: 8px;
     bottom: 8px;
@@ -111,18 +119,20 @@ input[type="submit"]{
     text-transform: uppercase;
     font-size: 1.8rem;
     font-weight: 700;
-    background-color: rgb(77, 65, 150);
+    background-color: var(--color);
     color: whitesmoke;
-    border: 2px solid rgb(77, 65, 150);
+    border: 2px solid var(--color);
     transition: all .5s;
     -webkit-appearance: none;
     -webkit-border-image: none;
 }
 input[type="submit"]:hover{
     background-color: whitesmoke;
-    color: rgb(77, 65, 150);
-    border-color: rgb(77, 65, 150);
+    color: var(--color);
+    border-color: var(--color);
 }
+/* Login 2 (Imagem e titulo) */
+
 #login_2{
     position: relative;
     border-top-right-radius: 20px;
@@ -130,9 +140,9 @@ input[type="submit"]:hover{
     width: calc(100% - 400px);
     text-align: center;
     background-color: rgba(0, 0, 0, .5);
-    background: linear-gradient(-45deg, #ee7752, slateblue,  gray) no-repeat;
+    background: linear-gradient(-45deg, #ee7752, rgb(77, 65, 150),  gray) no-repeat;
     background-size: 400% 400%;
-    animation: gradient 3s ease-in-out infinite;
+    animation: gradient 5s ease-in-out infinite;
 }
 #login_2 img{
     width: 480px;
@@ -146,9 +156,11 @@ input[type="submit"]:hover{
     font-style: italic;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 3.6rem;
-    text-shadow: 2px 2px 3px rgb(36, 32, 70);
+    text-shadow: 2px 2px 3px var(--color);
     animation: work 1.5s ease    forwards;
 }
+/* Medias */
+
 @media screen and (max-width: 770px){
     #login_2 img{
         width: 380px;
@@ -160,7 +172,7 @@ input[type="submit"]:hover{
         display: none;
     }
     body{
-        background: linear-gradient(-45deg, #ee7752, #23a6d6, slateblue) no-repeat;
+        background: linear-gradient(-45deg, #ee7752, #23a6d6, rgb(77, 65, 150)) no-repeat;
         animation: gradient 3s ease infinite;
         background-size: 400% 400%;
         animation: gradient 6s ease-in-out infinite;
@@ -180,12 +192,15 @@ input[type="submit"]:hover{
     input[type="text"],input[type="password"]{
         width: 75%;
     }
+    #info{
+        margin-top: 10px;
+    }
     input[type="submit"]{
-        margin-top: 30px;
+        margin-top: 15px;
         width: 65%;
     }
     main{
-        height: 80%;
+        height: 75%;
     }
     .input{
         width: 70%;
@@ -194,7 +209,9 @@ input[type="submit"]:hover{
         width: 100%;
     }
 }
-@keyframes gradient{
+/* Animações */
+
+@keyframes gradient /* Animação do background*/{
     0%{
         background-position: 0 50%;
     }
@@ -205,7 +222,7 @@ input[type="submit"]:hover{
         background-position: 0 50%;
     }
 }
-@keyframes work{
+@keyframes work /* Animação ao surgir as informações */{
     0%{
         transform: translate(0, 20px);
         opacity: .2;
