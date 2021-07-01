@@ -172,10 +172,9 @@ input[type="submit"]:hover{
         display: none;
     }
     body{
-        background: linear-gradient(-45deg, #ee7752, #23a6d6, rgb(77, 65, 150)) no-repeat;
-        animation: gradient 3s ease infinite;
-        background-size: 400% 400%;
-        animation: gradient 6s ease-in-out infinite;
+        background: linear-gradient(-45deg, #ee7752,rgb(77, 65, 150), black) no-repeat;
+        background-size: 500% 500%;
+        animation: gradient 10s ease-in-out infinite;
     }
     main{
         box-shadow: none;
@@ -230,5 +229,16 @@ input[type="submit"]:hover{
     100%{
         transform: translate(0px, 0px) scale(1);
         opacity: 1;
+    }
+}
+@keyframes gradient_2 /* Animação do background*/{
+    0%{
+        background-position: 0 25%;
+    }
+    50%{
+        background-position: 75% 25%;
+    }
+    100%{
+        background-position: 0 25%;
     }
 }
